@@ -1,53 +1,64 @@
-user_prompt = "Enter a todo :"
-todos=[]
-while True:
+#from functions import read_file,write_file,append_file
+import functions as f
 
-    user_opt = input("Enter (add , show , edit ,complete or exit):")
+while True:
+    
+    user_prompt = "Enter a todo :"
+    todos=[]
+    user_opt = input("Enter (add [todo], show , edit [todo no],complete [todo no] or exit):")
     user_opt=user_opt.strip()
 
     if(user_opt.startswith('add')):
 
         user_text = user_opt[4:]+"\n"
+        f.append_file(user_text)
 
-        with open('todo.txt','a+') as file:
-            file.writelines(user_text)
-
-    elif('show' in user_opt):
-
-        with open('todo.txt','r') as file:
-            todos=file.readlines()
+    elif(user_opt.startswith('show')):
+            
+        todos=f.read_file()
         
         for i,item in enumerate(todos,start=1):
             print(f"{i}-{item.strip('\n')}")
 
-    elif('edit' in user_opt):
+    elif(user_opt.startswith('edit')):
 
-        with open('todo.txt','r') as file:
-            todos=file.readlines()
-        
-        number = int(input("Number of todo item to edit:"))
-        todos[number-1]=input("Enter the new todo:")+"\n"
+        try:
+            todos=f.read_file()
+            
+            number = int(user_opt[5:])
+            todos[number-1]=input("Enter the new todo:")+"\n"
 
-        with open('todo.txt','w') as file:
-            file.writelines(todos)
+            f.write_file(todos)
 
-        print(f"Todo is successfully edited!!!\n")
+            print(f"Todo is successfully edited!!!\n")
+        except ValueError:
+            print("Edit command should be followed by the number of todo!!")
+            continue
 
-    elif('complete' in user_opt):
+    elif(user_opt.startswith('complete')):
 
-        number = int(input("Number of todo item to complete:"))
+        try:
+            number = int(user_opt[9:])
+            todos=f.read_file()
 
-        with open('todo.txt','r') as file:
-            todos=file.readlines()
+            rmv_msg=todos.pop(number-1)
+            rmv_msg=rmv_msg.strip('\n')
 
-        rmv_msg=todos.pop(number-1)
-        rmv_msg=rmv_msg.strip('\n')
+            f.write_file(todos)
 
-        with open('todo.txt','w') as file:
-            file.writelines(todos)
+            msg = f"Todo - '{rmv_msg}' is successfully removed!!!\n"
+            print(msg)
 
-        msg = f"Todo - '{rmv_msg}' is successfully removed!!!\n"
-        print(msg)
+        except ValueError:
+            print("Complete command should be followed by the number of todo!!")
+            continue
+        except IndexError:
+            print("Complete command exceeds the total number of todo!!")
+            continue
 
     elif('exit' in user_opt):
         break
+
+    else:
+        print("Command is invalid!!")
+
