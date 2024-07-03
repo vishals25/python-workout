@@ -1,4 +1,4 @@
-filepath=r"app1\todo.txt"
+filepath="todo.txt"
 def read_file():
     with open(filepath,'r') as file_loc:
         todos_local=file_loc.readlines()
