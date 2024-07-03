@@ -2,11 +2,11 @@
 
 This Python program allows users to manage a todo list with basic operations such as adding, showing, editing, completing todos, and exiting the program.
 
-## cli.py implements the todo app through terminal
+- `cli.py` implements the todo app through terminal
 
-## gui.py implements the todo app through gui
+- `gui.py` implements the todo app through gui
 
-## web.py implements the todo app through stramlit web ui
+- `web.py` implements the todo app through stramlit web ui
 ```python
    streamlit run web.py
 ```
