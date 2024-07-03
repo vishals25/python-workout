@@ -6,6 +6,11 @@ This Python program allows users to manage a todo list with basic operations suc
 
 ## gui.py implements the todo app through gui
 
+## web.py implements the todo app through stramlit web ui
+```python
+   streamlit run web.py
+```
+
 ## Usage
 
 1. **Adding a Todo:**
