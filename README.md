@@ -161,6 +161,32 @@ for index, value in enumerate(iterable):
     # Code to execute
 ```
 
-textfiles
-csv
-sql database
+## textfiles
+
+### Writing to a Text File
+
+- To write to a text file, you can use the `open` function with the mode set to `'w'` (write) or `'a'` (append). Here’s how you can do it:
+
+```python
+# Writing to a text file (this will overwrite the file if it exists)
+with open('example.txt', 'w') as file:
+    file.write('Hello, World!\n')
+
+# Appending to a text file (this will add content to the file if it exists)
+with open('example.txt', 'a') as file:
+    file.write('Appending a new line.\n')
+```
+
+### Reading from a Text File
+
+ To read from a text file, you can use the `open` function with the mode set to `'r'` (read). Here’s how you can do it:
+
+```python
+# Reading the entire file
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+```
+
+
+
