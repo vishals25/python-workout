@@ -2,6 +2,10 @@
 
 This Python program allows users to manage a todo list with basic operations such as adding, showing, editing, completing todos, and exiting the program.
 
+## cli.py implements the todo app through terminal
+
+## gui.py implements the todo app through gui
+
 ## Usage
 
 1. **Adding a Todo:**

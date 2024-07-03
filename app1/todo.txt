@@ -1,6 +1,3 @@
 first todo
 second todo
 third todo
-forth todo
-fifth todo
-sixth todo

@@ -1,5 +1,8 @@
-#from functions import read_file,write_file,append_file
+import time as t
 import functions as f
+
+loc_time=t.strftime("%b %d, %y : %H-%M-%S")
+print("It is",loc_time)
 
 while True:
     
