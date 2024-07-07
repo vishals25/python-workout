@@ -2,7 +2,11 @@
 
 This README provides instructions and details about the PDF Generator Script that reads topics from a CSV file and generates a structured PDF document with those topics.
 
-> The final generated is stored in `output.pdf`
+---
+
+### The final PDF generated is stored in `output.pdf`
+
+---
 
 ## Overview
 
