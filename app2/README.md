@@ -27,7 +27,7 @@
 
 - Use HTTPS for all web traffic.
 
-![alt text](<Screenshot 2024-07-07 064104.png>)
+![alt text](<examples/Screenshot 2024-07-07 064104.png>)
 
 ### Contact Forms:
 
@@ -35,7 +35,7 @@
 
 - Use the SMTP package to send emails from the contact form submissions to your specified email address.
 
-![alt text](<Screenshot 2024-07-07 064123.png>)
+![alt text](<examples/Screenshot 2024-07-07 064123.png>)
 
 ## Implementation Steps
 
@@ -75,7 +75,7 @@
 3. Create a form in your Streamlit app and set up the backend to handle form submissions and send emails.
 
 
-![alt text](IMG-20240707-WA0001[1].jpg)
+![alt text](examples/IMG-20240707-WA0001[1].jpg)
 
 
 Thank you !
