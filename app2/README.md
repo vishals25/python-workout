@@ -27,7 +27,8 @@
 
 - Use HTTPS for all web traffic.
 
-![alt text](<examples/Screenshot 2024-07-07 064104.png>)
+![Screenshot 2024-07-07 064104](https://github.com/vishals25/python-workout/assets/142819017/afe48bc9-e6fb-4489-bb32-9c855edd2b1f)
+
 
 ### Contact Forms:
 
@@ -35,7 +36,10 @@
 
 - Use the SMTP package to send emails from the contact form submissions to your specified email address.
 
-![alt text](<examples/Screenshot 2024-07-07 064123.png>)
+  
+![Screenshot 2024-07-07 064123](https://github.com/vishals25/python-workout/assets/142819017/90665077-f279-4025-8d04-9096af5e846e)
+
+
 
 ## Implementation Steps
 
@@ -74,8 +78,8 @@
 2.  Configure your SMTP server settings (e.g., host, port, username, password).
 3. Create a form in your Streamlit app and set up the backend to handle form submissions and send emails.
 
+![IMG-20240707-WA0001 1](https://github.com/vishals25/python-workout/assets/142819017/93171a22-01b7-4b9b-9661-ee2a27d00817)
 
-![alt text](examples/IMG-20240707-WA0001[1].jpg)
 
 
 Thank you !

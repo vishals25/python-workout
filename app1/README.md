@@ -37,3 +37,11 @@ This Python program allows users to manage a todo list with basic operations suc
 
 5. **Exiting the Program:**
    - Enter `exit` to quit the program.
+  
+## Attachments:
+
+- The todo app through stramlit web ui
+
+![Screenshot 2024-07-07 070516](https://github.com/vishals25/python-workout/assets/142819017/f2dc8921-a959-4433-9792-7f0db797a61a)
+
+
