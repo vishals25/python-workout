@@ -12,11 +12,6 @@ def send_mail(message):
 
     receiver='svs15324@gmail.com'
 
-    str=message
-
-
-    message=f"Subject: Today's News on Tesla From NewsApi\n"+str
-
     context=ssl.create_default_context()
 
     with smtplib.SMTP_SSL(host,port,context=context) as server:
