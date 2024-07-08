@@ -4,6 +4,7 @@ import glob
 from fpdf import FPDF
 from pathlib import Path
 
+
 filepaths = glob.glob("invoices/*.xlsx")
 # print(filepaths)
 
@@ -17,6 +18,7 @@ for path in filepaths:
 
     filename=Path(path).stem
     #print(filename)
+
     invoiceno,idate=filename.split("-")
 
     pdf.set_font(family="Times",style="B",size=16)
@@ -57,5 +59,6 @@ for path in filepaths:
     pdf.set_font(family="Times",style="B",size=14)
     pdf.set_fill_color(0,0,0)
     pdf.cell(w=0,h=8,txt="RUSTEZ`e",align="C",ln=1)#type:ignore
+
 
     pdf.output(f'pdf/{filename}.pdf')
