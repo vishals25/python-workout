@@ -106,3 +106,5 @@ Thumbs.db
 # Editor and IDE files
 .vscode/
 app6/data_small
+app10/practice
+app10/dbpractice.py
