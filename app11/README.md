@@ -42,3 +42,5 @@ This is a simple Hotel Booking System built using Streamlit, designed to facilit
 - Implement password hashing and secure storage practices for user passwords.
 
 ## Attachments
+![image](https://github.com/user-attachments/assets/e08696a7-551a-482c-9678-203940eb4867)
+![image](https://github.com/user-attachments/assets/caa266fa-6145-47cd-a216-b4da95eb7916)
