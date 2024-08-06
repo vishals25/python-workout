@@ -10,7 +10,7 @@ def send_mail(image):
 
 
     username ='svs15324@gmail.com'
-    password = str(os.getenv("password1"))
+    password = str(os.getenv("password"))
     receiver='svs15324@gmail.com'
 
     host='smtp.gmail.com'
